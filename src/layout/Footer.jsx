@@ -1,11 +1,16 @@
-import React from 'react'
+import React from 'react';
+import { Container } from 'react-bootstrap';
 
 export const Footer = () => {
-    // obtener el año actual
-    const anioActual = new Date().getFullYear();
+  const anioActual = new Date().getFullYear();
+
   return (
-    <footer className='footer'>
-      Portafolio Mark Castro - {anioActual}
+    <footer className="bg-body-secondary text-center py-4 border-top mt-5">
+      <Container>
+        <small>
+          {anioActual} Portafolio <strong>Mark Castro</strong> — Todos los derechos reservados
+        </small>
+      </Container>
     </footer>
-  )
-}
+  );
+};
